@@ -1,0 +1,121 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Elite Hub V1", "Ocean")
+
+
+-- Info
+local InfoTab = Window:NewTab("Info")
+local InfoSection = InfoTab:NewSection("This is still Beta")
+InfoSection:NewLabel("Made By Elite")
+InfoSection:NewLabel("Enjoy")
+
+
+-- Home
+local HomeTab = Window:NewTab("🏡 Home")
+local HomeSection = HomeTab:NewSection("Mic up")
+
+HomeSection:NewButton("Dancing", "Loads Every Dance script you need", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/nomercy0000/rewind/refs/heads/main/reverse"))()
+    print("incognito w")loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/nomercyisyourdad/micup/refs/heads/main/infinteyield"))()
+end)
+
+local HomeSection = HomeTab:NewSection("Extra")
+
+HomeSection:NewButton("Side to Side", "Makes you go side to side fast", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe/main/obf_11l7Y131YqJjZ31QmV5L8pI23V02b3191sEg26E75472Wl78Vi8870jRv5txZyL1.lua.txt"))()
+end)
+
+HomeSection:NewButton("System Broken", "Opens System Broken menu", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script'))()
+end)
+
+-- World
+local WorldTab = Window:NewTab("🌍 World Settings")
+local WorldSection = WorldTab:NewSection("Player")
+
+WorldSection:NewSlider("Walkspeed", "Make you go faster", 500, 16, function(s) -- 500 (MaxValue) | 16 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+WorldSection:NewButton("Anti AFK", "Makes it so you cannot get kicked out the game", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/2cVdLZM6"))()
+end)
+
+WorldSection:NewButton("Fly and Invisible", "Press X to fly and Press K to go invisible ", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/ad0MyWNb"))()
+end)
+
+local WorldSection = WorldTab:NewSection("World Settings")
+
+WorldSection:NewButton("BasePlate", "Gives you extra Baseplate", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/tq8LEA4K"))()
+end)
+
+local WorldSection = WorldTab:NewSection("Shaders")
+
+WorldSection:NewButton("Shaders Script", "Loads in the Shaders of the Script", function()
+    game:GetService("Lighting").Brightness = 2.25
+    game:GetService("Lighting").ExposureCompensation = 0.1
+    game:GetService("Lighting").ClockTime = 17.5
+
+    game:GetService("Sky").SkyboxBk = "http://www.roblox.com/asset/?id=144933338"
+    game:GetService("Sky").SkyboxDn = "http://www.roblox.com/asset/?id=144931530"
+    game:GetService("Sky").SkyboxFt = "http://www.roblox.com/asset/?id=144933262"
+    game:GetService("Sky").SkyboxLf = "http://www.roblox.com/asset/?id=144933244"
+    game:GetService("Sky").SkyboxRt = "http://www.roblox.com/asset/?id=144933299"
+    game:GetService("Sky").SkyboxUp = "http://www.roblox.com/asset/?id=144931564"
+    game:GetService("Sky").StarCount = 5000
+    game:GetService("Sky").SunAngularSize = 5
+    game:GetService("Sky").Parent = Light
+
+    game:GetService("BlurEffect").Size = 5
+    game:GetService("BlurEffect").Parent = Light
+end)
+
+WorldSection:NewButton("Day", "Makes the World Day Light", function()
+    game:GetService("Lighting").ClockTime = 15
+end)
+
+WorldSection:NewButton("Night", "Makes the World Night", function()
+    game:GetService("Lighting").ClockTime = 19
+end)
+
+-- Animation
+local AnimTab = Window:NewTab("🎭 Animation")
+local AnimSection = AnimTab:NewSection("Zombie")
+
+AnimSection:NewButton("Zombie walk", "Give yourself Zombie walk", function()
+    game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682"
+end)
+
+local AnimSection = AnimTab:NewSection("Zombie FE")
+
+AnimSection:NewButton("Zombie FE", "Gives you Custom zombie Anim fully", function()
+    game.Players.LocalPlayer.Character.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=3489171152"
+    game.Players.LocalPlayer.Character.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=3489171152"
+    game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=3489174223"
+    game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=3489173414"
+    game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616161997"
+    game.Players.LocalPlayer.Character.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616156119"
+    game.Players.LocalPlayer.Character.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616157476"
+end)
+
+-- Voice Chat
+local VoiceTab = Window:NewTab("🎤 Voice Chat")
+local VoiceSection = VoiceTab:NewSection("Voice chat")
+
+VoiceSection:NewButton("unsuspended Vc", "make your voice chat unsuspended", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/platinumicy/unsuspend/refs/heads/main/unsuspend"))()
+end)
+
+-- Misc
+local MiscTab = Window:NewTab("🦺 Misc")
+local MiscSection = MiscTab:NewSection("Weird Stuff")
+
+MiscSection:NewButton("Jerk off", "Get a tool to jerk off", function()
+    loadstring(game:HttpGet("https://pastefy.app/YZoglOyJ/raw"))()
+end)
+
+MiscSection:NewButton("Face Fuck", "Face fuck with Keybind Z", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/nomercy0000/face-fuck/refs/heads/main/mic%20up"))()
+end)
